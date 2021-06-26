@@ -2,9 +2,11 @@
   "name": "tic-tac-toe",
   "version": "1.0.0",
   "description": "Tic Tac Toe Desktop App",
-  "main": "index.js",
+  "main": "main-renderer.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "nodemon --watch 'npx electron main-renderer.js'",
+    "debug": "nodemon --inspect=3200 'npx electron .'"
   },
   "keywords": [
     "electron",
@@ -15,6 +17,7 @@
   "author": "devnrj07",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^13.1.4"
+    "electron": "^13.1.4",
+    "nodemon": "^2.0.7"
   }
 }
