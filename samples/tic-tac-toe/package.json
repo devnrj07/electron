@@ -1,0 +1,20 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe Desktop App",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "tic",
+    "tac",
+    "toe"
+  ],
+  "author": "devnrj07",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.4"
+  }
+}

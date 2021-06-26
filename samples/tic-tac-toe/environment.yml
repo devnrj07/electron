@@ -1,0 +1,7 @@
+name: tic-tac-toe
+channels:
+  - defaults
+  - conda-forge
+  - ctools
+dependencies:
+  - nodejs
