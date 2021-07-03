@@ -1,0 +1,21 @@
+{
+  "name": "ReadLater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec 'electron .'",
+    "reset": "git reset --hard"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  }
+}
