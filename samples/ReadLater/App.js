@@ -7,6 +7,11 @@ let mainWindow;
 //ipc communications are
 ipcMain.on("new-item", (e, itemUrl) => {
   console.log(`value from renderer:${itemUrl}`);
+
+  //reply back to renderer on the same channel
+  setTimeout(() => {
+    e.sender.send('new-item-success',`new item :${itemUrl}: addition ack from main proccess`)
+  },2000)
 });
 
 const createNewWindow = () => {
